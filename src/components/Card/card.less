@@ -1,0 +1,43 @@
+.container {
+  position: relative;
+  padding: 36px 80px 64px;
+  box-shadow: 0px 0.996045px 3.98418px rgba(51, 51, 51, 0.15);
+  border-radius: 10px;
+}
+
+.name {
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.link {
+  display: inline-block;
+}
+
+.btnWrapper {
+  position: absolute;
+  display: inline-block;
+  bottom: 20px;
+  right: 20px;
+}
+
+.like {
+  position: relative;
+  background-color: unset;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selected {
+  > svg {
+    > path {
+      fill: @black;
+    }
+  }
+}

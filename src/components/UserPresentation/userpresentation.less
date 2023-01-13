@@ -1,0 +1,51 @@
+.name {
+  font-size: 64px;
+  line-height: 1.2;
+  color: @white;
+}
+
+.jobTitle {
+  font-size: 32px;
+  line-height: 1.2;
+  color: @white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  > :not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.imgUser {
+  width: 187px;
+  height: 187px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+    > :not(:last-child) {
+      margin-right: 0px;
+    }
+  }
+
+  .name {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .jobTitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .information {
+    margin-bottom: 16px;
+    > :not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}

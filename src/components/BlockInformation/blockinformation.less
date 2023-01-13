@@ -1,0 +1,71 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px 13% 50px 13%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  > :first-child {
+    flex-basis: 66%;
+  }
+
+  > :last-child {
+    flex-basis: 20%;
+  }
+}
+
+.contacts {
+  > :not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.contact {
+  display: inline-block;
+  color: @black;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.phone {
+  position: relative;
+  padding-left: 32px;
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 11px);
+    left: 0;
+    background-image: url("../../images/phone.svg");
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.email {
+  position: relative;
+  padding-left: 32px;
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 11px);
+    left: 0;
+    background-image: url("../../images/mail.svg");
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+    padding: 32px 4% 32px 5%;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}

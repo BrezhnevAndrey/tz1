@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: @violet;
+}
+
+.wrapper {
+  padding: 39px 13%;
+  width: 100%;
+}
+
+.leftBtnWrapper {
+  display: inline-block;
+  position: absolute;
+  top: 32px;
+  left: 5%;
+}
+
+.rightBtnWrapper {
+  display: inline-block;
+  position: absolute;
+  top: 32px;
+  right: 5%;
+}
+
+.exitBtn {
+  > button {
+    padding: 0;
+    border: unset;
+    line-height: 0;
+  }
+}
+
+.textWrapper {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  .desktop {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 64px 4%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .mobile {
+    display: none;
+  }
+}
