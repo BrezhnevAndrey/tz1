@@ -32,7 +32,7 @@ export function Input({ type, name, labelText, invalid }: IInput) {
           name={name}
           id={name}
           className={inputClasses}
-          autocomplete={"on"}
+          autoComplete={"on"}
         />
         {type === "password" && (
           <button
